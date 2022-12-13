@@ -11,5 +11,10 @@ pipeline {
                sh "echo "Deploying Code"
           }
       }
+      stage('Send code to production'){
+        steps {
+            sh "bash -x sudo systemctl status jenkins"
+        }
+      }
    }
 }
