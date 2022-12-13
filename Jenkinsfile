@@ -21,5 +21,10 @@ pipeline {
             sh 'echo "Corrections"'
         }
       }
+      stage('Push back to deployment'){
+        steps {
+            sh 'echo "pwd"'
+        }
+      }
    }
 }
